@@ -29,8 +29,8 @@ keymap("n", "<S-Down>", ":m .+1<CR>", opts)
 keymap("v", "<S-Up>", ":m .-2<CR>", opts)
 keymap("v", "<S-Down>", ":m .+1<CR>", opts)
 
-keymap("n", "<C-j>", ":m .-2<CR>", opts)
-keymap("n", "<C-k>", ":m .+1<CR>", opts)
+keymap("n", "<C-k>", ":m .-2<CR>", opts)
+keymap("n", "<C-j>", ":m .+1<CR>", opts)
 
 -- Quick Exit Insert Mode
 keymap("i", "jk", "<ESC>", opts)

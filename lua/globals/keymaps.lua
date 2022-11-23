@@ -60,5 +60,8 @@ keymap("n", '<leader>(', 'viw<ESC>a)<ESC>bi(<ESC>ela', opts)
 keymap("n", '<leader>[', 'viw<ESC>a]<ESC>bi[<ESC>ela', opts)
 keymap("n", '<leader>{', 'viw<ESC>a}<ESC>bi{<ESC>ela', opts)
 
-
--- https://youtu.be/opxRKZn54kk?t=4585
+keymap("v", '<leader>"', 'c""<ESC>Pea', opts)
+keymap("v", "<leader>'", "c''<ESC>Pea", opts)
+keymap("v", '<leader>(', 'c()<ESC>Pea', opts)
+keymap("v", '<leader>[', 'c[]<ESC>Pea', opts)
+keymap("v", '<leader>{', 'c{}<ESC>Pea', opts)

@@ -26,11 +26,13 @@ keymap("i", "<C-l", "Right>", opts)
 -- Move Lines
 keymap("n", "<S-Up>", ":m .-2<CR>", opts)
 keymap("n", "<S-Down>", ":m .+1<CR>", opts)
-keymap("v", "<S-Up>", ":m .-2<CR>", opts)
-keymap("v", "<S-Down>", ":m .+1<CR>", opts)
+keymap("v", "<S-Up>", "dkP", opts)
+keymap("v", "<S-Down>", "djP", opts)
 
 keymap("n", "<C-k>", ":m .-2<CR>", opts)
 keymap("n", "<C-j>", ":m .+1<CR>", opts)
+keymap("v", "<C-k>", "dkP", opts)
+keymap("v", "<C-j>", "djP", opts)
 
 -- Quick Exit Insert Mode
 keymap("i", "jk", "<ESC>", opts)
@@ -45,10 +47,6 @@ keymap("n", "<leader>w", ":bw<CR>", opts)
 keymap("n", "<Tab>", ":bnext<CR>", opts)
 keymap("n", "<S-Tab>", ":bprev<CR>", opts)
 
--- AutoComplete
---keymap("i", "<Tab>", "", opts)
---keymap("i", "<S-Tab>", "", opts)
-
 -- Comment
 keymap("n", "<leader>cc", ":CommentToggle<CR>", opts)
 keymap("v", "<leader>cc", ":CommentToggle<CR>", opts)
@@ -59,9 +57,12 @@ keymap("n", "<leader>'", "viw<ESC>a'<ESC>bi'<ESC>ela", opts)
 keymap("n", '<leader>(', 'viw<ESC>a)<ESC>bi(<ESC>ela', opts)
 keymap("n", '<leader>[', 'viw<ESC>a]<ESC>bi[<ESC>ela', opts)
 keymap("n", '<leader>{', 'viw<ESC>a}<ESC>bi{<ESC>ela', opts)
+keymap("n", '<leader><', 'viw<ESC>a><ESC>bi<<ESC>ela', opts)
 
 keymap("v", '<leader>"', 'c""<ESC>Pea', opts)
 keymap("v", "<leader>'", "c''<ESC>Pea", opts)
 keymap("v", '<leader>(', 'c()<ESC>Pea', opts)
 keymap("v", '<leader>[', 'c[]<ESC>Pea', opts)
 keymap("v", '<leader>{', 'c{}<ESC>Pea', opts)
+keymap("v", '<leader><', 'c<><ESC>Pea', opts)
+

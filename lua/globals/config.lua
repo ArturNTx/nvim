@@ -16,5 +16,5 @@ opt.softtabstop = 4
 
 -- Theme
 opt.termguicolors = true
-cmd [[ colorscheme nord ]]
+cmd [[ colorscheme dracula ]]
 g.transparent_enable = true

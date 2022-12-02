@@ -16,7 +16,8 @@ require('packer').startup({function()
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
     use { 'nvim-treesitter/nvim-treesitter', requires = { {'nvim-lua/plenary.nvim'} }}
-    use 'shaunsingh/nord.nvim'
+    use 'Mofiqul/dracula.nvim'
+    use 'nvim-treesitter/nvim-treesitter'
 
 end,
 config = {

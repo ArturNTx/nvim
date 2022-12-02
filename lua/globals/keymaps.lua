@@ -18,10 +18,10 @@ keymap("i", "<Left>", "<Nop>", opts)
 keymap("i", "<Right>", "<Nop>", opts)
 
 -- Move Cursor in Insert Mode
-keymap("i", "<C-k", "<Up>", opts)
-keymap("i", "<C-j", "Down>", opts)
-keymap("i", "<C-h", "Left>", opts)
-keymap("i", "<C-l", "Right>", opts)
+keymap("i", "<C-k>", "<Up>", opts)
+keymap("i", "<C-j>", "<Down>", opts)
+keymap("i", "<C-h>", "<Left>", opts)
+keymap("i", "<C-l>", "<Right>", opts)
 
 -- Move Lines
 keymap("n", "<S-Up>", ":m .-2<CR>", opts)

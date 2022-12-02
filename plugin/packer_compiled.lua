@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/trojan/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/trojan/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/trojan/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -108,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/trojan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["nord.nvim"] = {
-    loaded = true,
-    path = "/home/trojan/.local/share/nvim/site/pack/packer/start/nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,

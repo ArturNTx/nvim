@@ -66,3 +66,5 @@ keymap("v", '<leader>[', 'c[]<ESC>Pea', opts)
 keymap("v", '<leader>{', 'c{}<ESC>Pea', opts)
 keymap("v", '<leader><', 'c<><ESC>Pea', opts)
 
+-- Selection
+keymap("n", "<C-S-A>", "ggVG", opts)

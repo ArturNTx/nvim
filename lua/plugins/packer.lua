@@ -18,6 +18,8 @@ require('packer').startup({function()
     use { 'nvim-treesitter/nvim-treesitter', requires = { {'nvim-lua/plenary.nvim'} }}
     use 'Mofiqul/dracula.nvim'
     use 'nvim-treesitter/nvim-treesitter'
+    use 'L3MON4D3/LuaSnip'
+    use 'onsails/lspkind-nvim'
 
 end,
 config = {

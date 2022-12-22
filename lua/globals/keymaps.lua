@@ -24,15 +24,11 @@ keymap("i", "<C-h>", "<Left>", opts)
 keymap("i", "<C-l>", "<Right>", opts)
 
 -- Move Lines
-keymap("n", "<S-Up>", ":m .-2<CR>", opts)
-keymap("n", "<S-Down>", ":m .+1<CR>", opts)
-keymap("v", "<S-Up>", "dkP", opts)
-keymap("v", "<S-Down>", "djP", opts)
-
 keymap("n", "<C-k>", ":m .-2<CR>", opts)
 keymap("n", "<C-j>", ":m .+1<CR>", opts)
-keymap("v", "<C-k>", "dkP", opts)
-keymap("v", "<C-j>", "djP", opts)
+
+keymap("v", "<C-k>", ":m '<-2<CR>gv=gv", opts)
+keymap("v", "<C-j>", ":m '>+1<CR>gv=gv", opts)
 
 -- Quick Exit Insert Mode
 keymap("i", "jk", "<ESC>", opts)

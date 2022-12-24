@@ -3,7 +3,7 @@ require('packer').startup({function()
     use 'wbthomason/packer.nvim'
     -- Plugins
     use 'lewis6991/impatient.nvim'
-    use 'windwp/nvim-autopairs'
+    use { "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }
     use {'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons'}
     use 'nvim-telescope/telescope.nvim'
     use 'terrortylor/nvim-comment'

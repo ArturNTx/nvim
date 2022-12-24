@@ -17,4 +17,5 @@ opt.softtabstop = 4
 -- Theme
 opt.termguicolors = true
 cmd [[ colorscheme dracula ]]
-g.transparent_enable = true
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
